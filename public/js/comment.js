@@ -22,19 +22,16 @@ const newFormHandler = async (event) => {
 const editButtonHandler = async (event) => {
     event.preventDefault();
 
-      if (post && title && id) {
-        const id = document.querySelector('#edit-button').getAttribute('data-edit');
-        const post = document.querySelector('#edit-post-field').value;
-        const title = document.querySelector('#edit-title-field').value;
-
-        const response = await fetch(`api/post/edit/${id}`, {
-          method: 'PUT',
-          body: JSON.stringify({ post, title }),
-          headers: { 'Content-type': 'application/json' }
-        });
-        
-        if (response.ok) {
-          document.location.reload()
+    if (event.target.getAttribute('data-edit')) {
+        const id = event.target.getAttribute('data-edit')
+    
+        const post = await fetch(`/edit/${id}`)
+    
+        const parsedPost = await post.json();
+        if (post.ok) {
+          document.querySelector('#edit-title-field').value = parsedPost.title;
+          document.querySelector('#edit-post-field').value = parsedPost.post;
+          postEdit.classList.add('is-active');
         } else {
           alert('Unable to edit comment')
         }
