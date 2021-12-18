@@ -1,0 +1,10 @@
+[
+  {
+    "title": "MVC",
+    "content": "Model - View - Controller: An architectural pattern that structures a codebase in three distinct sections, according to a software desing philosophy known as separation of concerns."
+  },
+  {
+    "title": "Sessions vs. Cookies",
+    "content": "Sessions are server-side files that store the user information, whereas Cookies are client-side files that contain user information on a local computer."
+  }
+]

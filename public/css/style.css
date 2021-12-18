@@ -1,6 +1,17 @@
-header,
-.post:not(:last-child) {
-  border-bottom: 1px solid #ccc;
+.blog {
+  border: 0.1rem solid #ccc;
+  border-radius: 0.5rem;
+  box-shadow: 0.1rem 0.1rem 0.2rem whitesmoke inset;
+  margin: 0.1rem;
+}
+
+nav {
+  float: right;
+}
+nav ul li {
+  display: inline-flex;
+  justify-content: space-around;
+  padding: 0.75rem;
 }
 
 .no-button {
@@ -8,12 +19,117 @@ header,
   border: none;
   padding: 0;
   cursor: pointer;
-  color: #1b89bc;
   text-decoration: none;
   font-size: 100%;
+  color: gainsboro;
 }
 
-.no-button:hover {
-  color: #065b83;
-  text-decoration: underline;
+textarea {
+  -webkit-border-radius: 0.5rem;
+  -moz-border-radius: 0.5rem;
+  border-radius: 0.5rem;
+}
+
+body {
+  background-color: rgb(28, 43, 58);
+  background-image: url("../images/oliver-pecker-HONJP8DyiSM-unsplash.jpg");
+}
+
+main {
+  background-color: rgba(248, 248, 255, 0.584);
+  border-radius: 0.5rem;
+  padding: 1rem;
+  margin: 1rem;
+  color: rgb(1, 1, 28);
+  box-shadow: 0.1rem 0.1rem 0.2rem whitesmoke;
+}
+
+header {
+  background-color: rgba(0, 0, 0, 0.269);
+  color: gainsboro;
+}
+header h1 {
+  background-color: rgba(248, 248, 255, 0.509);
+  border-radius: 0.5rem;
+  text-shadow: 0.2rem 0.2rem 0.4rem #000000c4;
+  box-shadow: 0.4rem 0.4rem 0.5rem;
+  padding: 1rem;
+  margin: 1rem;
+  color: gainsboro;
+}
+
+/* Text color of links set when unvisited. */
+a:link {
+  color: gainsboro;
+  text-shadow: 0.2rem 0.2rem 0.4rem #000000c4;
+}
+
+/* Text color of links set when visited, i.e. after the link has been clicked on. */
+a:visited {
+  color: gainsboro;
+}
+/* Text color changes and box appears when mouse hovers over link. */
+a:hover {
+  color: grey;
+}
+button:hover {
+  color: grey;
+  opacity: 0.8;
+}
+label:hover {
+  color: grey;
+  opacity: 0.8;
+}
+.comment-btn {
+  background-color: rgb(228, 23, 23);
+  color: whitesmoke;
+  border-radius: 0.5rem;
+  margin: 1rem;
+  padding: 0.5rem;
+  border: 0.1rem ridge white;
+}
+.comment-btn:hover {
+  color: whitesmoke;
+}
+
+.imagesize img {
+  height: 20rem;
+  width: 20rem;
+  object-fit: contain;
+}
+
+@media screen and (max-width: 599px) {
+  nav ul li {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+  }
+}
+@media screen and (max-width: 446px) {
+  header {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+  }
+}
+
+@media screen and (max-width: 385px) {
+  .imagesize img {
+    height: 15rem;
+    width: 15rem;
+    object-fit: contain;
+  }
+}
+
+@media screen and (max-width: 356px) {
+  header {
+    margin: 1rem;
+  }
+}
+@media screen and (max-width: 285px) {
+  .imagesize img {
+    height: 10rem;
+    width: 10rem;
+    object-fit: contain;
+  }
 }
