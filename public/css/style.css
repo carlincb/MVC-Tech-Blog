@@ -1,8 +1,7 @@
 .blog {
-  border: 0.1rem solid #ccc;
-  border-radius: 0.5rem;
-  box-shadow: 0.1rem 0.1rem 0.2rem whitesmoke inset;
+  border-bottom: 0.1rem dotted rgba(204, 204, 204, 0.447);
   margin: 0.1rem;
+  box-shadow: 0.1rem 0.1rem 1.5rem rgba(227, 226, 226, 0.447);
 }
 
 nav {
@@ -41,7 +40,7 @@ main {
   padding: 1rem;
   margin: 1rem;
   color: rgb(1, 1, 28);
-  box-shadow: 0.1rem 0.1rem 0.2rem whitesmoke;
+  box-shadow: 0.1rem 0.1rem 1.5rem whitesmoke;
 }
 
 header {
