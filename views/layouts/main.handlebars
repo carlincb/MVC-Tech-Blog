@@ -18,9 +18,6 @@
         {{#if logged_in}}
         <ul>
           <li>
-            <label user-id={{id}}>Welcome {{name}}</label>
-          </li>
-          <li>
           <a href="/">Home</a>
           </li>
           <li>
@@ -31,7 +28,17 @@
           </li>
         </ul>
         {{else}}
-        <a href="/login">Login</a>
+        <ul>
+          <li>
+          <a href="/">Home</a>
+          </li>
+          <li>
+            <a href="/login">Dashboard</a>
+          </li>
+          <li>
+            <a href="/login">Login</a>
+          </li>
+        </ul>
         {{/if}}
       </nav>
     </header>
