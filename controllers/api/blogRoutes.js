@@ -18,7 +18,7 @@ router.post('/', withAuth, async (req, res) => {
 });
 
 router.put('/:id', withAuth, async (req, res) => {
-  if(req.params.user_id == req.session.user_id){
+  // if(req.params.user_id == req.session.user_id){
     try {
         const editBlog = await Blog.update({
           ...req.body,
@@ -34,7 +34,7 @@ router.put('/:id', withAuth, async (req, res) => {
       } catch (err) {
         res.status(400).json(err);
       }
-    }
+    // }
   });
 
 router.delete('/:id', withAuth, async (req, res) => {

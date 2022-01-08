@@ -53,8 +53,12 @@ router.get('/blog/:id', async (req, res) => {
           attributes: ['name'],
         },
         {
-          model: Comment
-        }
+          model: Comment,
+          include: {
+            model: User,
+            attributes: ['name'],
+          },
+        },
       ],
     });
 
@@ -62,7 +66,8 @@ router.get('/blog/:id', async (req, res) => {
     console.log(blog);
     res.render('blog', {
       ...blog,
-      logged_in: req.session.logged_in
+      logged_in: req.session.logged_in,
+      disable_edit: (req.session.user_id !== blog.user_id),
     });
   } catch (err) {
     res.status(500).json(err);

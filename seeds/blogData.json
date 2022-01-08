@@ -1,7 +1,7 @@
 [
   {
     "title": "MVC",
-    "content": "Model - View - Controller: An architectural pattern that structures a codebase in three distinct sections, according to a software desing philosophy known as separation of concerns."
+    "content": "Model - View - Controller: An architectural pattern that structures a codebase in three distinct sections, according to a software design philosophy known as separation of concerns."
   },
   {
     "title": "Sessions vs. Cookies",

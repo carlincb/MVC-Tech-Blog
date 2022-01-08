@@ -1,8 +1,8 @@
-.blog {
-  border-bottom: 0.1rem dotted rgba(204, 204, 204, 0.447);
-  margin: 0.1rem;
-  box-shadow: 0.1rem 0.1rem 1.5rem rgba(227, 226, 226, 0.447);
-  width: 75vw;
+.blog,
+.commentContent {
+  border-bottom: 0.1rem rgba(204, 204, 204, 0.447);
+  margin: 0.2rem;
+  box-shadow: 0.1rem 0.1rem 1rem rgba(148, 144, 144, 0.447);
 }
 
 nav {
@@ -34,29 +34,38 @@ body {
   background-color: rgb(28, 43, 58);
   background-image: url("../images/oliver-pecker-HONJP8DyiSM-unsplash.jpg");
 }
-
 main {
+  background-color: rgba(0, 0, 0, 0.406);
+  color: whitesmoke;
+}
+/* main {
   background-color: rgba(248, 248, 255, 0.584);
   border-radius: 0.5rem;
   padding: 1rem;
   margin: 1rem;
   color: rgb(1, 1, 28);
   box-shadow: 0.1rem 0.1rem 1.5rem whitesmoke;
-}
+} */
 
 header {
   background-color: rgba(0, 0, 0, 0.269);
   color: gainsboro;
 }
 header h1 {
-  background-color: rgba(248, 248, 255, 0.509);
-  border-radius: 0.5rem;
+  background-color: silver;
+  border-radius: 0.1rem;
   text-shadow: 0.2rem 0.2rem 0.4rem #000000c4;
-  box-shadow: 0.4rem 0.4rem 0.5rem;
+  box-shadow: 0.4rem 0.4rem 0.5rem gray;
   padding: 2rem;
   margin: 1rem;
-  color: gainsboro;
+  color: rgb(28, 26, 26);
   width: fit-content;
+}
+
+.commentEntry,
+#blogForm,
+.newBlogForm {
+  padding: 3rem;
 }
 
 /* Text color of links set when unvisited. */
@@ -81,17 +90,17 @@ label:hover {
   color: grey;
   opacity: 0.8;
 }
-.comment-btn {
+/* .comment-btn {
   background-color: rgb(228, 23, 23);
   color: whitesmoke;
   border-radius: 0.5rem;
   margin: 1rem;
   padding: 0.5rem;
   border: 0.1rem ridge white;
-}
-.comment-btn:hover {
+} */
+/* .comment-btn:hover {
   color: whitesmoke;
-}
+} */
 
 .imagesize img {
   height: 20rem;
