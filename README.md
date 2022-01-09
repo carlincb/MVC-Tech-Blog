@@ -121,7 +121,7 @@ No contributions needed at this time, but please feel free to contact me at my e
 
 ## Links
 
-[Heroku Live Link]()
+[Heroku Live Link](https://fast-garden-22281.herokuapp.com/)
 
 [GitHub Link](https://github.com/carlincb/MVC-Tech-Blog)
 
