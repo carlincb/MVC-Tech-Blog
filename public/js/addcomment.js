@@ -4,7 +4,6 @@ var commentText;
 commentBtn.click(function(){
     commentText = $(this).parent().siblings('textarea').val();
     console.log(commentText);
-    // blogId = $(this).parents('.blog').attr('blog-id');
     var blogId = $("#blogForm").attr("data-id");
     console.log(blogId);
     commentAppendSpot = $(this).parent().parent();
@@ -22,14 +21,6 @@ commentBtn.click(function(){
 
         success: function(){
             console.log('Comment added successfully');
-            // console.log(commentAppendSpot);
-            // userName = $('nav label').text();
-            // console.log($('nav label').text());
-            // commentAppendSpot.append(`<article class="comment-block">
-            //     <span>${userName.substr(8).slice(0, -6)}</span>
-            //     <span>${new Date()}</span>
-            //     <p>${commentText}</p>
-            // </article>`);
         },
 
         error: function(){

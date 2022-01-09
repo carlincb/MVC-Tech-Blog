@@ -71,9 +71,11 @@ No installation necessary. This application can be run from the browser using th
 
 Please see below for examples of this application's usage.
 
-### Video of Usage:
-
--
+![1](public/images/1.png)
+![2](public/images/2.png)
+![3](public/images/3.png)
+![4](public/images/4.png)
+![5](public/images/5.png)
 
 ## Credits
 
@@ -121,7 +123,7 @@ No contributions needed at this time, but please feel free to contact me at my e
 
 [Heroku Live Link]()
 
-[GitHub Link]()
+[GitHub Link](https://github.com/carlincb/MVC-Tech-Blog)
 
 ## Questions
 
