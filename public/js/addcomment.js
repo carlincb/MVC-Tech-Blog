@@ -21,6 +21,7 @@ commentBtn.click(function(){
 
         success: function(){
             console.log('Comment added successfully');
+            window.location.reload();
         },
 
         error: function(){
